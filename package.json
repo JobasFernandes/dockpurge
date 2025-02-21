@@ -1,0 +1,30 @@
+{
+  "name": "dockpurge",
+  "version": "1.0.0",
+  "description": "Aplicação para manutenção de infra Docker.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JobasFernandes/dockpurge.git"
+  },
+  "keywords": [
+    "docker",
+    "swarm",
+    "maintenance",
+    "cleanup",
+    "dockpurge"
+  ],
+  "author": "Joseph Fernandes <joseph.automatus@gmail.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JobasFernandes/dockpurge/issues"
+  },
+  "homepage": "https://github.com/JobasFernandes/dockpurge#readme",
+  "dependencies": {
+    "dockerode": "^4.0.4",
+    "dotenv": "^16.4.7"
+  }
+}

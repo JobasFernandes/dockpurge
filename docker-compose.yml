@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  dockpurge:
+    image: dockpurge:latest
+    build: .
+    environment:
+      - MODE=standalone
+      - SWARM_GLOBAL=false
+      - CLEANUP_INTERVAL=24
+      - UNUSED_VOLUME_RETENTION=7
+      - REMOVE_BUILD_CACHE=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    # Apenas aplicável em deploys no modo swarm
+    # deploy:
+    #   mode: global
